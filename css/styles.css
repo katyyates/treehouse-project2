@@ -1,0 +1,190 @@
+* {
+    box-sizing: border-box;
+  }
+
+ /* Header */
+ 
+ header {
+        text-align: center;
+        justify-content: center;
+        margin: auto 30px;
+    }
+
+h1 {
+    margin-bottom: 0rem;
+    color:  #00464a;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+ ul {
+    list-style-type: none; /* remove bullet points */
+  }
+
+  a {
+    color: #00464a;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-family: 'Bebas Neue', sans-serif;
+    text-transform: uppercase;
+  }
+ 
+  .nav {
+    padding: 0rem;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  /* Main */
+
+  img {
+    max-width: 100%;
+  }
+
+.about  {
+    text-align: center;
+    justify-content: center;
+    background-color: white;
+}
+
+p {
+    font-size: 1rem;
+    margin: 0.5rem;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  h2 {
+    margin: 1rem;
+    color:  #00464a;
+    font-family: 'Bebas Neue', sans-serif;
+  }
+
+ .wrapper {
+    padding: 0rem 1rem;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .intro {
+    padding: 1rem 0rem;
+    margin-left: -20px;
+    margin-right: -20px;
+  }
+
+  .intro p {
+    margin-bottom: 0rem;
+    padding: 0rem 2rem;
+  }
+
+.profile-image {
+    padding: 0rem 4rem;
+  }
+
+  section p {
+    padding-bottom: 2rem;
+  }
+
+  .pics {
+    margin: 3rem 0rem 2rem 0rem;
+    font-size: 1.6rem;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 1rem;
+  }
+
+  .top {
+    overflow: hidden;
+  }
+
+  ul.bottom-nav {
+    display: none;
+}
+
+.contact {
+ margin-bottom: 2rem;
+}
+
+
+    /* Media Queries */
+
+@media (min-width: 768px) {
+
+    .wrapper {
+        display: flex;
+         flex-wrap: wrap;
+    }
+
+    section {
+            flex-basis: calc(50%);
+            padding: 6px;
+    }
+
+    .contact {
+        padding: 0rem 4rem;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: auto 30px;
+    }
+
+ .main-nav li {
+        display: inline-block;
+        width: auto;
+        margin: 10px;
+    }
+
+    .intro {
+        display: flex;
+        flex-direction: row-reverse;
+        text-align: left;
+    }
+
+.intro p {
+    margin: 0px;
+    padding: 0px 0px 0px 4rem;
+    font-size: 1.5rem;
+}
+
+.top {
+    display: none;
+  }
+
+  ul.bottom-nav {
+    display: flex;
+    font-size: 1rem;
+    margin: 0.5rem;
+    font-family: 'Poppins', sans-serif;
+  }
+
+    @media (min-width: 1024px) {
+ 
+        header {
+            flex-direction: row;
+            margin: 0px 5rem;
+        }
+
+        .intro {
+            margin: 0px 2rem;
+        }
+
+        section {
+            flex-basis: calc(30%);
+            padding: 6px;
+    }
+    .profile-image {
+        min-width: 50%;
+      }
+    }
+
+    h2 {
+        font-size: 2.2rem;
+    }
+}
